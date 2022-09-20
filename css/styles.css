@@ -417,10 +417,6 @@ img {
   color: var(--white-color);
 }
 
-.footer-box-adress {
-  margin-right: 70px;
-}
-
 .address-footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -451,6 +447,7 @@ img {
 .footer .container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-subtitle {
@@ -491,10 +488,6 @@ img {
 }
 
 /* footer-subscribe */
-.subscribe {
-  margin-left: 92px;
-}
-
 .subscribe-form {
   display: flex;
   align-items: flex-end;
@@ -674,10 +667,10 @@ img {
 
   color: rgba(117, 117, 117, 1);
 
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 
 .register-form-input {
