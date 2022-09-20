@@ -133,8 +133,8 @@
               <div class="work-overlay">
                 <p class="work-desc">Десктопні додатки</p>
               </div>
+            </li>
           </div>
-          </li>
 
           <div class="work-thumb">
             <li class="item work-item">
@@ -142,8 +142,9 @@
               <div class="work-overlay">
                 <p class="work-desc">Мобільні додатки</p>
               </div>
+            </li>
           </div>
-          </li>
+
 
           <div class="work-thumb">
             <li class="item work-item">
@@ -151,8 +152,8 @@
               <div class="work-overlay">
                 <p class="work-desc">Дизайнерські рішення</p>
               </div>
+            </li>
           </div>
-          </li>
 
         </ul>
       </div>
@@ -163,6 +164,7 @@
         <h2 class="section-title">Наша команда</h2>
 
         <ul class="list team-list">
+
           <li class="item team-item">
             <img class="img" src="./images/product.jpg" alt="Product Designer" width="270" height="260" />
             <div class="team-item-content">
@@ -200,6 +202,7 @@
               </ul>
             </div>
           </li>
+
           <li class="item team-item">
             <img class="img" src="./images/frontend.jpg" alt="Frontend Developer" width="270" height="260" />
             <div class="team-item-content">
@@ -237,6 +240,7 @@
               </ul>
             </div>
           </li>
+
           <li class="item team-item">
             <img class="img" src="./images/marketing.jpg" alt="Marketing" width="270" height="260" />
             <div class="team-item-content">
@@ -274,6 +278,7 @@
               </ul>
             </div>
           </li>
+
           <li class="item team-item">
             <img class="img" src="./images/ui.jpg" alt="UI Designer" width="270" height="260" />
             <div class="team-item-content">
@@ -368,7 +373,7 @@
 
   <footer class="footer">
     <div class="container">
-      <div class="fotter-box-adress">
+      <div class="footer-box-adress">
         <a class="link logo" href="./index.html"><span class="accent-logo">Web</span><span
             class="footer-logo">Studio</span></a>
         <address id="contacts" class="address-footer">
@@ -387,8 +392,8 @@
         </address>
       </div>
 
-      <div class="fotter-box-links">
-        <p class="join">Приєднуйтесь</p>
+      <div class="footer-box-links">
+        <p class="footer-subtitle">Приєднуйтесь</p>
         <ul class="list">
           <li class="item">
             <a class="link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -420,6 +425,22 @@
           </li>
         </ul>
       </div>
+
+      <div class="subscribe">
+        <form class="subscribe-form">
+          <label class="subscribe-label">
+            <span class="footer-subtitle subscribe-title">Підпишіться на розсилку</span>
+            <input type="email" class="subscribe-input" name="mail" placeholder="E-mail" required />
+          </label>
+
+          <button class="footer-btn btn" type="submit">Підписатися
+            <svg class="footer-icon-send" width="24px" height="24px">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+
     </div>
   </footer>
 
@@ -430,6 +451,54 @@
           <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
+      <form class="register-form" name="register-form" autocomplete="on" novalidate>
+
+        <strong class="register-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+
+        <div class="register-form-group">
+          <label class="register-form-field">
+            <span class="register-form-label">Ім'я</span>
+            <input class="register-form-input" type="text" name="name" required />
+            <svg class="register-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#person-black"></use>
+            </svg>
+          </label>
+
+          <label class="register-form-field">
+            <span class="register-form-label">Телефон</span>
+            <input class="register-form-input" type="tel" name="phone" required minlength="13" maxlength="13">
+            <svg class="register-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#phone-black"></use>
+            </svg>
+          </label>
+
+          <label class="register-form-field">
+            <span class="register-form-label">Пошта</span>
+            <input class="register-form-input" type="email" name="mail" required />
+            <svg class="register-form-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#email-black"></use>
+            </svg>
+          </label>
+
+          <label class="register-form-field">
+            <span class="register-form-label">Коментар</span>
+            <textarea class="register-form-message" name="comment" rows="7" placeholder="Введіть текст"></textarea>
+          </label>
+        </div>
+
+        <label class="register-form-agreement">
+          <input class="register-form-checkbox visually-hidden" type="checkbox" name="" id="" required />
+          <svg class="register-form-icons" width="16" height="15">
+            <use class="icon-checked" href="./images/icons.svg#icon-check"></use>
+            <use class="icon-unchecked" href="./images/icons.svg#unchecked"></use>
+          </svg>
+          <span class="register-form-desc">Погоджуюся з розсилкою та приймаю
+            <a class="register-form-link" href="" target="_blank">Умови договору</a></span>
+        </label>
+
+        <button class="register-form-btn btn" type="submit">Відправити</button>
+
+      </form>
     </div>
   </div>
 
